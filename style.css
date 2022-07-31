@@ -401,6 +401,10 @@ h6 {
       height: 1px;
 }
 
+.info{
+      text-align: center;
+}
+
 .info h4 {
       font-size: 18px;
       font-weight: lighter;
