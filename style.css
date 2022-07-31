@@ -401,7 +401,6 @@ h6 {
       height: 1px;
 }
 
-
 .info h4 {
       font-size: 18px;
       font-weight: lighter;
@@ -419,6 +418,7 @@ h6 {
       padding-left: 20px;
 }
 
+
 ul#social li a{
     font-weight:100;
     text-decoration: none;
@@ -427,24 +427,18 @@ ul#social li a{
     color: #ffffff;      
 }
 
+#media p{
+      text-align: center;
+}
+
 .endpage{
       text-align: center;
       text-decoration: none;
       font-size: small;
 }
 
-#media p{
+#media #social {
       text-align: center;
-}
-
-#fb::before {
-      display: inline-block;
-      content: '';
-      border-radius: 100%;
-      height: 4px;
-      width: 4px;
-      margin-right: 6px;
-      background: #3b5998;
 }
 
 
@@ -455,7 +449,8 @@ ul#social li a{
       height: 4px;
       width: 4px;
       margin-right: 6px;
-      background: #e52b7f;
+      background: #fcaf45;
+      text-decoration: none;
 }
 
 #tw::before {
@@ -476,15 +471,17 @@ ul#social li a{
       height: 4px;
       width: 4px;
       margin-right: 6px;
-      background:  #ff9500;
+      background: #c4302b;
 }
 
 #media, #address {
       text-align: right;
 }
 
+
 #media ul {
       list-style: none;
+      text-align: left;
 }
 
 #media ul li {
@@ -493,6 +490,9 @@ ul#social li a{
 
 @media(max-width: 768px) {
       .collab, #personal, #media, #address {
+            text-align: center;
+      }
+      #media #social {
             text-align: center;
       }
 
