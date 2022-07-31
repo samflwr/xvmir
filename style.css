@@ -437,10 +437,6 @@ ul#social li a{
       text-align: center;
 }
 
-#media #social {
-      text-align: center;
-}
-
 #fb::before {
       display: inline-block;
       content: '';
