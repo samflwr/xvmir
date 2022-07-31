@@ -418,6 +418,15 @@ h6 {
       padding-left: 20px;
 }
 
+ul#social li a{
+    font-weight:100;
+    text-decoration: none;
+    line-height: 2.8em;
+    padding-right:.5em;
+    color: #ffffff;      
+}
+
+
 #fb::before {
       display: inline-block;
       content: '';
