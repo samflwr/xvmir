@@ -37,6 +37,7 @@
             <nav>
                   <span id="brand">
                         <a href="/">xvmir</a>
+                        <h id="response"></h>
                   </span>
 
                   <ul id="menu">
@@ -191,7 +192,14 @@
             <br><br><br><br>
 
       </div>
-
+      <!-- request -->
+      <script>
+          fetch('https://xvmir.com?input=ciao')
+          .then(response => response.json())
+          .then(data => {
+              document.getElementById("response").innerHTML = "vivienne: " + data;
+          });
+      </script>
       <!-- greensock cdn -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
