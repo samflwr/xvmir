@@ -215,7 +215,7 @@ nav #menu li a:hover {
   opacity: 1;
 }
 
-@media (max-width: 990) {
+@media (max-width: 990px) {
   #toggle {
     visibility: visible;
     opacity: 1;
