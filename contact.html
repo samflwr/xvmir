@@ -8,7 +8,7 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <meta name="author" content="Samir Buzatu">
 
-    <title>xvmir. portfolio - contact</title>
+    <title>xvmir. portfolio - about</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 
     <!-- stylesheet -->
@@ -39,17 +39,17 @@
       <!--navbar starts here-->
       <nav>
         <span id="brand">
-          <a href="/">.xvmir()</a>
+          <a href="index.html">.xvmir()</a>
         </span>
         <ul id="menu">
           <li>
-            <a href="/"><span>.</span>home<span>()</span></a>
+            <a href="index.html"><span>.</span>home<span>()</span></a>
           </li>
           <li>
-            <a href="about"><span>.</span>about me<span>()</span></a>
+            <a href="about.html"><span>.</span>about me<span>()</span></a>
           </li>
           <li>
-            <a href="contact"><span>.</span>contact<span>()</span></a>
+            <a href="contact.html"><span>.</span>contact<span>()</span></a>
           </li>
           <li>
             <form action="/src/resume - kbdelacruz.pdf" target="_blank">
@@ -69,13 +69,13 @@
 
         <ul id="menu">
           <li>
-            <a href="/"><span>.</span>home<span>()</span></a>
+            <a href="index.html"><span>.</span>home<span>()</span></a>
           </li>
           <li>
-            <a href="about"><span>.</span>about me<span>()</span></a>
+            <a href="about.html"><span>.</span>about me<span>()</span></a>
           </li>
           <li>
-            <a href="contact"><span>.</span>contact<span>()</span></a>
+            <a href="contact.html"><span>.</span>contact<span>()</span></a>
           </li>
           <li>
             <form action="/src/resume - kbdelacruz.pdf" target="_blank">
@@ -87,94 +87,59 @@
         </ul>
       </div>
       <!--navbar ends here-->
-      <div class="whitespace"></div>
 
-      <!--hero starts here-->
+      <!--hero image starts here-->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 about wow fadeInUp" data-wow-delay="1s">
+            <h3 class="wow fadeInUp" data-wow-delay="1.2s">about me.</h3>
+          </div>
+        </div>
+      </div>
+      <!--hero image ends here-->
 
+      <!--hero section starts here-->
       <div class="container">
         <div class="hero-content">
           <br /><br />
 
-          <div class="row"></div>
-          <div class="col-lg-8">
-            <h3 class="wow fadeInUp" data-wow-delay="1s">say hello 👋</h3>
-            <br />
-            <p class="wow fadeInUp" data-wow-delay="1.2s">
-              i'm serious, even a "hello" is welcome <3.
-            </p>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="about-container1">
+                <!--img-->
+                <!--
+                <img
+                  class="wow fadeInUp"
+                  data-wow-delay="1.4s"
+                  src="img/kobe-image.jpg"
+                />
+                -->
+                <!--about-me-text-->
+                <div class="about-text">
+                  <p class="wow fadeInUp">
+                    March 18, 2023
+                  </p>
+                  <p class="wow fadeInUp">
+                    My name is <strong>Buzatu Samir Ionut Trifu </strong> and I am an <strong>19-year-old</strong> programmer and graphic designer. I have a passion for creating visually stunning designs and building efficient and functional software.
+                  </p>
+                  <p class="wow fadeInUp">
+                    I have a strong technical background and am proficient in all programming languages, including <strong>Java, Python, C++</strong>, and many others. I have experience with both front-end and back-end development and have worked on a variety of projects, from creating websites to building mobile applications.
+                  </p>
+                  <p class="wow fadeInUp">
+                    In addition to programming, I also have a talent for graphic design. I enjoy creating logos, banners, and other visual elements that bring a brand or product to life. I use a variety of tools, such as <strong>Adobe Photoshop</strong> and <strong>Illustrator</strong>, to create my designs, and I always strive to deliver work that is both creative and effective.
+                  </p>
+                  <p class="wow fadeInUp" data-wow-delay="0.2s">
+                    My passion for technology and design is matched only by my commitment to delivering <strong>high-quality</strong> work to my clients. Whether you're looking for a new website or a stunning graphic design, I am dedicated to bringing your vision to life. So if you're interested in working with me, please don't hesitate to get in touch.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!--hero ends here-->
+      <!--hero section ends here-->
 
-      <!--form section starts here-->
-
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-8">
-            <form
-              name="contact-form"
-              id="contact-form"
-              action="https://formspree.io/f/myyldjgy"
-              method="POST"
-            >
-              <ul>
-                <li class="wow fadeInUp" data-wow-delay="1.4s">
-                  <label for="contact-name">Name :</label>
-                  <div class="textarea">
-                    <input
-                      type="text"
-                      name="contact-name"
-                      id="contact-name"
-                      value=""
-                      required
-                    />
-                  </div>
-                </li>
-
-                <li class="wow fadeInUp" data-wow-delay="1.6s">
-                  <label for="contact-email">Email :</label>
-                  <div class="textarea">
-                    <input
-                      type="email"
-                      name="contact-email"
-                      id="contact-email"
-                      value=""
-                      required
-                    />
-                  </div>
-                </li>
-
-                <li class="wow fadeInUp" data-wow-delay="1.6s">
-                  <label for="contact-project">Message :</label>
-                  <div class="textarea">
-                    <textarea
-                      type="text"
-                      name="contact-project"
-                      id="contact-project"
-                      rows="6"
-                      value=""
-                      required
-                    >
-                    </textarea>
-                  </div>
-                </li>
-              </ul>
-
-              <button
-                type="submit"
-                name="contact-submit"
-                id="contact-submit"
-                class="send wow fadeInUp"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <!--form section ends here-->
+      <div class="whitespace"></div>
 
       <!--footer starts here-->
       <div class="footer">
@@ -185,7 +150,7 @@
             <div class="row">
               <div class="col-lg-12">
                 <p class="wow fadeInUp">
-                  Looking for a website developer? I can help you.
+                  looking for a website developer? i can help you.
                 </p>
               </div>
             </div>
@@ -197,38 +162,38 @@
           <br /><br />
 
           <div class="info">
-            <div class="row">
-              <div class="col-lg-4" id="personal">
-                <p class="wow fadeInUp">connect with me</p>
+            <div class="row"> <!--here modified-->
+              <div class="col-lg-4" id="address">
+                <p class="wow fadeInUp" data-wow-delay="0s">connect with me</p>
                 <h4 class="wow fadeInUp" data-wow-delay="0.2s">
-                  github:
-                  <a href="https://github.com/kbdelacruz" target="_blank"
-                    >github/kbdelacruz</a
+                  ig:
+                  <a href="https://www.instagram.com/xvmir/" target="_blank"
+                    >@xvmir</a
                   >
                 </h4>
                 <br /><br />
               </div>
-
               <div class="col-lg-4" id="media">
+                
                 <p class="wow fadeInUp" data-wow-delay="0s">follow me</p>
                 <ul>
-                  <li id="fb" class="wow fadeInUp" data-wow-delay="0.4s">
+                  <li id="yt" class="wow fadeInUp" data-wow-delay="0.4s">
                     <a
                       href="https://www.facebook.com/Kobeyongg/"
                       target="_blank"
-                      >fb</a
+                      >yt</a
                     >
                   </li>
                   <li id="ig" class="wow fadeInUp" data-wow-delay="0.6s">
                     <a
-                      href="https://www.instagram.com/kobeyongg/"
+                      href="https://www.instagram.com/xvmir/"
                       target="_blank"
                       >ig</a
                     >
                   </li>
-                  <li id="tw" class="wow fadeInUp" data-wow-delay="0.8s">
+                  <li id="rd" class="wow fadeInUp" data-wow-delay="0.8s">
                     <a href="https://twitter.com/hypertensyon" target="_blank"
-                      >tw</a
+                      >rd</a
                     >
                   </li>
                 </ul>
@@ -238,10 +203,14 @@
               <div class="col-lg-4" id="address">
                 <p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
                 <h4 class="wow fadeInUp" data-wow-delay="0.2s">
-                  <a href="contact.html">kobe@kolab-ph.com</a>
+                  <a href="contact.html">samir@xvmir.com</a>
                 </h4>
                 <br /><br />
               </div>
+            </div>
+            <div class="col-lg-12">
+              <p class="endpage">
+                    &copy;xvmir. All rights reserved.</p>
             </div>
           </div>
         </div>
@@ -249,61 +218,58 @@
       <!--footer ends here-->
       <br /><br />
     </div>
-  </body>
 
-  <!-- greensock cdn-->
-  <script src="particles.js"></script>
-  <script src="app.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+      <br /><br />
+    </div>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- greensock cdn-->
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
-  <script type="text/javascript">
-    // navigation starts here
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
-    $("#toggle").click(function () {
-      $(this).toggleClass("on");
-      $("#resize").toggleClass("active");
-    });
+    <script type="text/javascript">
+      // navigation starts here
 
-    $("#resize ul li a").click(function () {
-      $(this).toggleClass("on");
-      $("#resize").toggleClass("active");
-    });
+      $("#toggle").click(function () {
+        $(this).toggleClass("on");
+        $("#resize").toggleClass("active");
+      });
 
-    $(".close-btn").click(function () {
-      $(this).toggleClass("on");
-      $("#resize").toggleClass("active");
-    });
+      $("#resize ul li a").click(function () {
+        $(this).toggleClass("on");
+        $("#resize").toggleClass("active");
+      });
 
-    // navigation ends here
+      $(".close-btn").click(function () {
+        $(this).toggleClass("on");
+        $("#resize").toggleClass("active");
+      });
 
-    // nav animation
+      // navigation ends here
 
-    TweenMax.from("#brand", 1, {
-      delay: 0.4,
-      y: 10,
-      opacity: 0,
-      ease: Expo.easeInOut,
-    });
+      // nav animation
 
-    TweenMax.staggerFrom(
-      "#menu li a",
-      1,
-      {
+      TweenMax.from("#brand", 1, {
         delay: 0.4,
+        y: 10,
         opacity: 0,
         ease: Expo.easeInOut,
-      },
-      0.1
-    );
+      });
 
-    // nav animation ends
+      TweenMax.staggerFrom(
+        "#menu li a",
+        1,
+        {
+          delay: 0.4,
+          opacity: 0,
+          ease: Expo.easeInOut,
+        },
+        0.1
+      );
 
-    // black & white starts
-
-    // black & white ends
-
-    new WOW().init();
-  </script>
+      new WOW().init();
+    </script>
+  </body>
 </html>
