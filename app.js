@@ -11,6 +11,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 function changeQuote() {
   var quotes = [
+    "Buzatu Samir Ionut Trifu, noto come xvmir, è un artista italiano poliedrico nato il 10 gennaio 2004. La sua passione per l'arte e la tecnologia lo ha portato a sviluppare un'ampia gamma di competenze in diversi campi. Come musicista, xvmir si dedica principalmente alla produzione di musica phonk e lo-fi."
     "i have a love-hate relationship with coding. it's like solving a puzzle, but the puzzle is constantly changing its rules.",
     "my secret to staying up late coding? Lots of caffeine and a playlist of upbeat tunes. and maybe a cat nap or two.",
     "designing and programming are like peanut butter and jelly - they just belong together.",
