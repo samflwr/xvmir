@@ -385,7 +385,7 @@ h6 {
   cursor: pointer;
   background-blend-mode: screen;
   filter: contrast(88%);
-  background-blend-mode: screen;
+
 }
 
 .project1::after {
@@ -408,7 +408,6 @@ h6 {
   background-size: cover;
   cursor: pointer;
   filter: contrast(88%);
-  background-blend-mode: screen;
 }
 
 .project2::after {
@@ -430,7 +429,7 @@ h6 {
   background-size: cover;
   cursor: pointer;
   filter: contrast(92%);
-  background-blend-mode: screen;
+
 }
 
 .project3::after {
