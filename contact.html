@@ -33,6 +33,32 @@
     <!-- for on scroll animations -->
     <link rel="stylesheet" href="animate.css" />
     <script src="wow.min.js"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+      event.preventDefault(); // Previeni il comportamento predefinito del form
+
+      // Effettua qui la logica per inviare il form tramite AJAX o altre operazioni necessarie
+      // Puoi utilizzare fetch() o altri metodi per inviare i dati del form
+
+      // Ad esempio:
+      fetch("https://formspree.io/f/mvoepevy", {
+        method: "POST",
+        body: new FormData(this),
+      })
+        .then((response) => {
+          // Gestisci la risposta come desiderato
+          console.log("Messaggio inviato con successo!", response);
+          // Puoi anche mostrare un messaggio di successo o eseguire altre azioni qui
+        })
+        .catch((error) => {
+          // Gestisci eventuali errori nell'invio del form
+          console.error("Si è verificato un errore durante l'invio del messaggio:", error);
+        });
+    });
+  });
+</script>
+
   </head>
   <body>
     <div class="wrapper">
