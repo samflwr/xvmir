@@ -781,8 +781,10 @@ p {
   color:#808080;
 }
 body.stop-animations .wow {
+  /*
   animation-duration: 0s !important;
   animation-delay: 0s !important;
+  */
 }
 
 /*
@@ -792,7 +794,7 @@ h3{
 h3:hover {
   color: rgb(105, 105, 105);
 }
-*/
+
 
 
 @media (max-width: 999px) {
