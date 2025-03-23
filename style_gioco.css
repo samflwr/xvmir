@@ -149,7 +149,7 @@ li:hover {
 }
 
 li.clicked {
-    background: #007AFF; /* Colore blu per l'elemento selezionato */
+    background: #ff6f00; /* Colore blu per l'elemento selezionato */
     color: white;
     pointer-events: none;
     box-shadow: none;
@@ -190,7 +190,7 @@ input[type="number"] {
 }
 
 input[type="number"]:focus {
-    border-color: #007aff; /* Colore blu per il focus */
+    border-color: #ff6f00; /* Colore blu per il focus */
     outline: none;
 }
 
@@ -286,7 +286,7 @@ label {
 }
 
 .input-field:focus {
-    border-color: #007aff; /* Colore blu per il focus */
+    border-color: #ff6f00; /* Colore blu per il focus */
     outline: none;
 }
 button {
