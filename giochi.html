@@ -19,7 +19,7 @@
         <div id="menu">
             <h1>scegli un gioco</h1>
             <button onclick="selectGame(1)">
-                <i class="fas fa-user-secret"></i> scopri l'Impostore
+                <i class="fas fa-user-secret"></i> scopri l'impostore
             </button>
             <button onclick="selectGame(2)">
                 <i class="fas fa-search"></i> indovina la parola
@@ -30,13 +30,13 @@
             <button onclick="goToMenu()">
                 <i class="fas fa-arrow-left"></i>
             </button>
-            <h1>Imposta il gioco</h1>
+            <h1>imposta il gioco</h1>
             <div class="input-container">
                 <label for="numPlayers">in quanti state giocando?</label>
                 <input type="number" id="numPlayers" min="3" max="10" class="input-field" placeholder="numero di giocatori (3-10)">
             </div>
             <div class="input-container" id="playerNamesContainer"></div>
-            <button onclick="startGame()">Inizia <i class="fas fa-play"></i></button>
+            <button onclick="startGame()">inizia <i class="fas fa-play"></i></button>
         </div>
         
 
@@ -44,11 +44,13 @@
             <h2 id="gameTitle"></h2>
             <ul id="playersList"></ul>
             <button onclick="restartGame()">gioca di nuovo <i class="fas fa-redo-alt"></i></button>
-            <button onclick="addCustomWords()">aggiungi parole <i class="fas fa-plus-circle"></i></button>
+            <button onclick="addCustomWords()"><i class="fas fa-plus-circle"></i> aggiungi parole</button>
             <button onclick="goToMenu()">menu <i class="fas fa-home"></i></button>
         
-            <button onclick="toggleRules()">📜 regole</button>
-        
+            <button onclick="toggleRules()">
+                <i class="fas fa-scroll"></i> regole
+            </button>
+                    
             <div id="gameRules" style="display: none;"></div>
         </div>
 

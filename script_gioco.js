@@ -202,7 +202,7 @@ function showGameScreen() {
     document.getElementById("game").style.display = "block";
 
     // Imposta il titolo del gioco
-    document.getElementById("gameTitle").textContent = (selectedGame === 1) ? "Gioco 1: Scopri l'impostore" : "Gioco 2: Indovina la parola";
+    document.getElementById("gameTitle").textContent = (selectedGame === 1) ? "scopri l'impostore" : "indovina la parola";
 
     // Aggiungi le regole in base al gioco selezionato
     const gameRules = document.getElementById("gameRules");
