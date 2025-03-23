@@ -1,21 +1,43 @@
 /* Stile generale */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background-color: #F2F2F7;
-    color: #333;
+    font-family: "Courier new";
+    background-color: #0f0f0f; /* Sfondo scuro */
+    color: #d3d7de; /* Testo chiaro */
     margin: 0;
-    padding: 40px 20px;
+    padding: 0px 20px; /* Aggiungi padding per creare spazio tra il body e i bordi della finestra */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Imposta altezza minima per far scorrere la pagina quando c'è più contenuto */
     flex-direction: column;
+    overflow: auto; /* Permette lo scroll solo quando necessario */
 }
 
 body {
     background: #0f0f0f;
     color: #d3d7de;
+    font-size: 18px;
+    line-height: 1.5em;
+	cursor: default;
+}
+
+body1 {
     font-family: "Courier new";
+    background-color: #0f0f0f; /* Sfondo scuro */
+    color: #d3d7de; /* Testo chiaro */
+    margin: 0;
+    padding: 0px 0px; /* Aggiungi padding per creare spazio tra il body e i bordi della finestra */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh; /* Imposta altezza minima per far scorrere la pagina quando c'è più contenuto */
+    flex-direction: column;
+    overflow: auto; /* Permette lo scroll solo quando necessario */
+}
+
+body1 {
+    background: #0f0f0f;
+    color: #d3d7de;
     font-size: 18px;
     line-height: 1.5em;
 	cursor: default;
@@ -26,6 +48,29 @@ h1, h2 {
     color: #d3d7de; /* Colore chiaro per il testo sui titoli */
     margin: 10px 0;
 }
+/* Stile nav */
+nav {
+    display: flex;
+    justify-content: flex-start; /* Allinea a sinistra */
+    align-items: left; /* Centra verticalmente */
+    padding: 0px 0px; /* Padding per spaziatura interna */
+}
+
+#brand {
+    font-weight: bolder;
+}
+
+#brand a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+#brand a:hover {
+    text-decoration: none;
+}
+
 
 /* Pulsanti */
 button {
@@ -228,7 +273,7 @@ label {
     outline: none;
 }
 button {
-    background: #2E2E2E; /* Sfondo scuro per il pulsante */
+    background: #1e1e1e; /* Sfondo scuro per il pulsante */
     color: #d3d7de; /* Colore chiaro per il testo */
     border: none;
     padding: 16px 24px;
