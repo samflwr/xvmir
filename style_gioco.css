@@ -30,7 +30,7 @@ body1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 95vh; /* Imposta altezza minima per far scorrere la pagina quando c'è più contenuto */
+    min-height: 75vh; /* Imposta altezza minima per far scorrere la pagina quando c'è più contenuto */
     flex-direction: column;
     overflow: auto; /* Permette lo scroll solo quando necessario */
 }
