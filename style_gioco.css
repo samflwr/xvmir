@@ -159,14 +159,15 @@ li.clicked {
 #setup, #game {
     min-height: 30%;
     text-align: center;
-    max-width: 800px;
+    max-width: 900px;
     min-width: 200px;
-    width: 90%;
+    width: 85%;
     background: #333333; /* Colore di sfondo più scuro per la sezione di gioco */
-    border-radius: 20px;
+    border-radius: 35px;
     padding: 30px;
     box-shadow: 0px 6px 22px rgba(0, 0, 0, 0.5); /* Ombra più marcata */
 }
+
 
 /* Input */
 input[type="number"] {
@@ -208,6 +209,7 @@ input[type="number"]:focus {
 }
 
 /* Stile per le regole del gioco */
+/* Game Rules */
 #gameRules {
     background-color: #333333; /* Sfondo scuro */
     border-radius: 12px;
@@ -220,6 +222,15 @@ input[type="number"]:focus {
     font-size: 16px;
     color: #d3d7de; /* Colore chiaro per il testo */
     line-height: 1.6;
+    opacity: 0; /* Impostiamo l'opacità a 0 inizialmente */
+    transform: translateY(-100px); /* Inizialmente, spostato sopra */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transizione dell'opacità e della posizione */
+}
+
+/* Quando l'elemento diventa visibile */
+#gameRules.show {
+    opacity: 1;
+    transform: translateY(0); /* Ritorna alla posizione originale */
 }
 
 #gameRules h2 {
@@ -273,7 +284,7 @@ label {
     outline: none;
 }
 button {
-    background: #1e1e1e; /* Sfondo scuro per il pulsante */
+    background: #2E2E2E; /* Sfondo scuro per il pulsante */
     color: #d3d7de; /* Colore chiaro per il testo */
     border: none;
     padding: 16px 24px;

@@ -181,11 +181,18 @@ function assignWords() {
 
 function toggleRules() {
     const gameRules = document.getElementById("gameRules");
+    
     // Se le regole sono visibili, le nascondiamo; se sono nascoste, le mostriamo
     if (gameRules.style.display === "none" || gameRules.style.display === "") {
-        gameRules.style.display = "block";
+        gameRules.style.display = "block";  // Mostra l'elemento
+        setTimeout(() => {
+            gameRules.classList.add('show'); // Aggiungi la classe per l'animazione
+        }, 10); // Un piccolo ritardo per far partire l'animazione
     } else {
-        gameRules.style.display = "none";
+        gameRules.classList.remove('show'); // Rimuovi la classe dell'animazione
+        setTimeout(() => {
+            gameRules.style.display = "none"; // Nascondi l'elemento dopo l'animazione
+        }, 500); // Tempo dell'animazione
     }
 }
 
