@@ -1,0 +1,252 @@
+/* Stile generale */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #F2F2F7;
+    color: #333;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+body {
+    background: #0f0f0f;
+    color: #d3d7de;
+    font-family: "Courier new";
+    font-size: 18px;
+    line-height: 1.5em;
+	cursor: default;
+}
+/* Titoli */
+h1, h2 {
+    font-weight: 700;
+    color: #d3d7de; /* Colore chiaro per il testo sui titoli */
+    margin: 10px 0;
+}
+
+/* Pulsanti */
+button {
+    background: #2e2e2e; /* Sfondo più scuro per i pulsanti */
+    color: #d3d7de; /* Colore chiaro per il testo */
+    border: none;
+    padding: 16px 24px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 12px;
+    margin: 12px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Ombra più marcata per effetto scuro */
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background: #4f4f4f; /* Colore più chiaro per l'hover */
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+#game button {
+    background: #2e2e2e;
+}
+
+#game button:hover {
+    background: #4f4f4f;
+}
+
+button:last-child {
+    background: #2e2e2e;
+}
+
+button:last-child:hover {
+    background: #585858; /* Hover più chiaro per il pulsante finale */
+}
+
+/* Schermata iniziale */
+#menu {
+    text-align: center;
+}
+
+/* Lista giocatori */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    background: #333333; /* Colore scuro per lo sfondo degli elementi della lista */
+    margin: 12px 0;
+    padding: 18px 30px;
+    border-radius: 16px;
+    cursor: pointer;
+    max-width: 250px;
+    border: 1px solid #444444; /* Bordo più scuro */
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.4); /* Ombra più marcata per effetto scuro */
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    text-align: center;
+    color: #d3d7de; /* Testo chiaro */
+    font-weight: 500;
+}
+
+li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.5); /* Ombra più intensa */
+}
+
+li.clicked {
+    background: #007AFF; /* Colore blu per l'elemento selezionato */
+    color: white;
+    pointer-events: none;
+    box-shadow: none;
+}
+
+/* Schermata di setup e gioco */
+#setup, #game {
+    min-height: 30%;
+    text-align: center;
+    max-width: 800px;
+    min-width: 200px;
+    width: 90%;
+    background: #333333; /* Colore di sfondo più scuro per la sezione di gioco */
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 6px 22px rgba(0, 0, 0, 0.5); /* Ombra più marcata */
+}
+
+/* Input */
+input[type="number"] {
+    width: 50%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #444444; /* Bordo più scuro */
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+    background-color: #2e2e2e; /* Sfondo scuro per l'input */
+    color: #d3d7de; /* Colore chiaro per il testo */
+}
+
+input[type="number"]:focus {
+    border-color: #007aff; /* Colore blu per il focus */
+    outline: none;
+}
+
+/* Transizioni */
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Stile dell'input con placeholder semi opacizzato */
+.input-field::placeholder {
+    color: rgba(211, 215, 222, 0.5); /* Colore del placeholder semi opaco */
+    font-style: italic;
+}
+
+/* Stile per le regole del gioco */
+#gameRules {
+    background-color: #333333; /* Sfondo scuro */
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Ombra più marcata */
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    color: #d3d7de; /* Colore chiaro per il testo */
+    line-height: 1.6;
+}
+
+#gameRules h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #007aff; /* Colore blu per i titoli */
+    margin-bottom: 15px;
+}
+
+#gameRules p {
+    margin-bottom: 15px;
+}
+
+#gameRules ul {
+    padding-left: 20px;
+    list-style: disc;
+    margin-top: 10px;
+}
+
+#gameRules li {
+    margin-bottom: 10px;
+}
+
+/* Formato degli input */
+.input-container {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #d3d7de; /* Colore chiaro per i label */
+    margin-bottom: 8px;
+    display: block;
+}
+
+.input-field {
+    width: 60%; /* Imposta una larghezza più contenuta */
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #444444; /* Bordo più scuro */
+    font-size: 16px;
+    margin-top: 10px;
+    transition: all 0.2s ease;
+    background-color: #2e2e2e; /* Sfondo scuro per l'input */
+    color: #d3d7de; /* Colore chiaro per il testo */
+}
+
+.input-field:focus {
+    border-color: #007aff; /* Colore blu per il focus */
+    outline: none;
+}
+button {
+    background: #1e1e1e; /* Sfondo scuro per il pulsante */
+    color: #d3d7de; /* Colore chiaro per il testo */
+    border: none;
+    padding: 16px 24px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 12px;
+    margin: 12px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Ombra più marcata */
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background: #444444; /* Colore più chiaro al passaggio del mouse */
+}
+
+button:active {
+    transform: translateY(1px);
+    background: #2a2a2a; /* Colore ancora più scuro al click */
+}
