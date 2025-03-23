@@ -167,7 +167,13 @@ li.clicked {
     padding: 30px;
     box-shadow: 0px 6px 22px rgba(0, 0, 0, 0.5); /* Ombra più marcata */
 }
-
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 pulsanti per riga */
+    justify-items: stretch; /* Allinea i pulsanti a tutta la larghezza del contenitore */
+    align-items: center; /* Centra i pulsanti verticalmente */
+    width: 100%; /* Assicurati che il contenitore prenda tutta la larghezza disponibile */
+}
 
 /* Input */
 input[type="number"] {

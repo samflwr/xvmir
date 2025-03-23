@@ -43,13 +43,13 @@
         <div id="game" style="display: none;">
             <h2 id="gameTitle"></h2>
             <ul id="playersList"></ul>
-            <button onclick="restartGame()">gioca di nuovo <i class="fas fa-redo-alt"></i></button>
-            <button onclick="addCustomWords()"><i class="fas fa-plus-circle"></i> aggiungi parole</button>
-            <button onclick="goToMenu()">menu <i class="fas fa-home"></i></button>
-        
-            <button onclick="toggleRules()">
-                <i class="fas fa-scroll"></i> regole
-            </button>
+            <div id="buttons">
+                <button onclick="restartGame()">gioca di nuovo <i class="fas fa-redo-alt"></i></button>
+                <button onclick="addCustomWords()"><i class="fas fa-plus-circle"></i> aggiungi parole</button>
+                <button onclick="goToMenu()">menu <i class="fas fa-home"></i></button>
+                <button onclick="toggleRules()"><i class="fas fa-scroll"></i> regole</button>
+            </div>
+            
                     
             <div id="gameRules" style="display: none;"></div>
         </div>
