@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PWA per iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="ProvaPWA">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <!-- Manifesto PWA -->
+  <link rel="manifest" href="manifest.json">
+
+  <title>Prova PWA</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f0f0;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>✅ Sei dentro una web app PWA!</h1>
+    <p>Aggiungimi alla schermata Home per provarmi come un'app vera ✨</p>
+  </div>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').then(() => {
+        console.log('Service worker registrato');
+      });
+    }
+  </script>
+</body>
+</html>
