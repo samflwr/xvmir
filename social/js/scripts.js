@@ -427,11 +427,6 @@ if (tab.classList.contains('active')) {
 }
 });
 
-document.addEventListener('touchmove', function (event) {
-    // Se siamo all'inizio o alla fine, previene lo scroll elastico
-    if (window.scrollY === 0 || (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-      event.preventDefault();
-    }
-  }, { passive: false });
+
 
   
