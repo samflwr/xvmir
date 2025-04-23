@@ -386,6 +386,11 @@ function PageScroll() {
 }
 
 
+document.addEventListener('gesturestart', function (e) {
+e.preventDefault();
+});
+
+
 const tabList = document.querySelector('.product-info-tab');
 const tabs = tabList.querySelectorAll('li a');
 const underline = document.createElement('div');
