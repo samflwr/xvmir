@@ -1455,7 +1455,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #515184;
-  background-color: #fff;
+  background-color: #000000;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
@@ -3264,6 +3264,23 @@ progress {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+/* Linea neon sotto il tab attivo */
+.product-info-tab {
+  position: relative;
+}
+
+.product-info-tab::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--theme-color, #ffffff);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  left: 0;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .form-control::-webkit-file-upload-button {
     transition: none;
@@ -10863,7 +10880,6 @@ strong {
 
 
 .title-font {
-  color: #000; /* Cambia questo colore a tuo piacimento */
   font-family: "Moena", sans-serif;
 }
 .right-chat {
@@ -11415,6 +11431,104 @@ strong {
     color: var(--theme-color);
   }
 }
+.theme-dark .app-footer-glass {
+  background: rgba(255, 255, 255, 0.06) !important;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 -12px 50px rgba(0, 255, 255, 0.3),   /* alone azzurro tipo neon */
+    0 -4px 20px rgba(0, 0, 0, 0.5);        /* ombra scura di profondità */
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.theme-dark .app-footer-glass i {
+  color: #eaeaea;
+}
+
+@media (max-width: 991.98px) {
+  .app-footer-glass {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.3); /* ombra */
+
+    min-height: 6.3rem;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .app-footer-glass .cart-count {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    border-radius: 15px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 10px;
+  }
+
+  .app-footer-glass .dot-count {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    border-radius: 5px;
+    width: 7px;
+    height: 7px;
+    line-height: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 10px;
+  }
+
+  .app-footer-glass a {
+    padding: 20px;
+    margin: 0 5px;
+  }
+
+  .app-footer-glass a:first-child {
+    margin-left: 30px;
+  }
+
+  .app-footer-glass a:last-child {
+    margin-right: 30px;
+  }
+
+  .app-footer-glass a i {
+    color: #fff;
+    font-size: 30px;
+    top: 3px;
+    position: relative;
+  }
+
+  .app-footer-glass a span {
+    color: var(--theme-color);
+  }
+  .app-footer-glass {
+    background: rgba(255, 255, 255, 0.06) !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow:
+      0 -12px 50px rgba(0, 255, 255, 0.3),   /* alone azzurro tipo neon */
+      0 -4px 20px rgba(0, 0, 0, 0.5);        /* ombra scura di profondità */
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+}
 
 @media (max-width: 991.98px) {
   .app-footer-top {
@@ -11935,6 +12049,7 @@ body:not(.theme-full) .main-content .middle-sidebar-bottom.header-padding {
     position: relative;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .header-wrapper.pos-fixed .navbar-collapse {
     background-color: #fff;
@@ -14627,6 +14742,23 @@ select.sort {
 }
 .right-scroll-bar::-webkit-scrollbar-thumb {
   background-color: #aaa;
+}
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.glass-textarea {
+  background: rgba(255, 255, 255, 0.1); /* trasparenza */
+  backdrop-filter: blur(10px);          /* sfocatura */
+  -webkit-backdrop-filter: blur(10px);  /* supporto Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;                  /* angoli morbidi */
+  color: #fff;                          /* testo chiaro */
 }
 .scroll-bar {
   margin-left: 0;
