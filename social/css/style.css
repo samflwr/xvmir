@@ -14,6 +14,10 @@
 body {
   touch-action: none;
 }
+html, body {
+  overscroll-behavior: none;
+  overflow-x: hidden;
+}
 
 .preloader {
   position: fixed;
