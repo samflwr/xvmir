@@ -433,3 +433,14 @@ document.addEventListener('touchmove', function (event) {
       event.preventDefault();
     }
   }, { passive: false });
+
+  document.addEventListener('touchstart', function (e) {
+    if (e.touches.length > 1) {
+      e.preventDefault(); // Blocca pinch zoom
+    }
+  }, { passive: false });
+  
+  document.addEventListener('touchmove', function (e) {
+    e.preventDefault(); // Blocca lo scroll e il rubber band
+  }, { passive: false });
+  
