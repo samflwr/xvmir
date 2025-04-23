@@ -11,6 +11,10 @@
   font-weight: normal;
   font-style: normal;
 }
+body {
+  touch-action: none;
+}
+
 .preloader {
   position: fixed;
   left: 0;
