@@ -6,28 +6,28 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://xvmir.it/</loc>
-  <lastmod>2024-11-28T00:00:00+00:00</lastmod>
+  <loc>https://xvmir.com/</loc>
+  <lastmod>2025-12-13T00:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://xvmir.it/work</loc>
-  <lastmod>2024-11-28T00:00:00+00:00</lastmod>
+  <loc>https://xvmir.com/work</loc>
+  <lastmod>2025-12-13T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://xvmir.it/magazine</loc>
-  <lastmod>2024-11-28T00:00:00+00:00</lastmod>
+  <loc>https://xvmir.com/magazine</loc>
+  <lastmod>2025-12-13T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://xvmir.it/about</loc>
-  <lastmod>2024-11-28T00:00:00+00:00</lastmod>
+  <loc>https://xvmir.com/about</loc>
+  <lastmod>2025-12-13T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://xvmir.it/contact</loc>
-  <lastmod>2024-11-28T00:00:00+00:00</lastmod>
+  <loc>https://xvmir.com/contact</loc>
+  <lastmod>2025-12-13T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
